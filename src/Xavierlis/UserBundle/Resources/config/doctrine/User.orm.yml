@@ -1,0 +1,14 @@
+Xavierlis\UserBundle\Entity\User:
+    type:  entity
+    table: xl_user
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        balance:
+            type: integer
+            nullable: true
+            options:
+                default: 0

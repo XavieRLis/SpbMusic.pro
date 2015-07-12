@@ -21,12 +21,11 @@ class AppKernel extends Kernel
             new Vich\UploaderBundle\VichUploaderBundle(),
             new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
             new FM\ElfinderBundle\FMElfinderBundle(),
-
-
-
+            new FOS\UserBundle\FOSUserBundle(),
 
             /* Xavierlis Bundles */
             new Xavierlis\CoreBundle\XavierlisCoreBundle(),
+            new Xavierlis\UserBundle\XavierlisUserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
